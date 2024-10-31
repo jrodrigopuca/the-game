@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",          // Para el código de Node.js (server.ts)
+    "rootDir": ".",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",    // Resolver módulos al estilo Node.js
+    "lib": ["ES6", "DOM"]          // Incluye APIs de ES6 y DOM para el cliente
+  },
+  "include": ["server.ts", "client.ts"]
+}

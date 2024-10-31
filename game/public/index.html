@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Piedra, Papel y Tijera</title>
+  <script defer src="/client.bundle.js"></script>
+</head>
+<body>
+  <h1>Piedra, Papel y Tijera</h1>
+  <div id="game">
+    <button id="createRoom">Crear Sala</button>
+    <input type="text" id="roomIdInput" placeholder="ID de la sala" />
+    <button id="joinRoom">Unirse a Sala</button>
+    <p id="invitationLink"></p>
+    <div id="choices" style="display: none;">
+      <p>Elige tu jugada:</p>
+      <button data-choice="piedra">Piedra</button>
+      <button data-choice="papel">Papel</button>
+      <button data-choice="tijera">Tijera</button>
+    </div>
+    <p id="gameStatus"></p>
+    <p id="roundResult"></p>
+    <!-- Aquí se mostrará cualquier error -->
+    <p id="error" style="color: red;"></p>
+  </div>
+</body>
+</html>
